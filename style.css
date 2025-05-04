@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navegación */
+.barra-navegacion ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #1e2a38;
+    padding: 15px 40px;
+}
+
+.barra-navegacion ul li {
+    margin-left: 20px;
+}
+
+.barra-navegacion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.barra-navegacion ul li a:hover {
+    color: #00d4ff;
+}
+
+/* Header */
+.encabezado {
+    background: linear-gradient(to right, #1e2a38, #3e4c59);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.encabezado h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+/* Onda decorativa */
+.decoracion-onda svg {
+    display: block;
+    margin-top: -1px;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.contenido-principal h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e2a38;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #00c2ff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.seccion-imagen img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones de contenido */
+.detalle-impuesto {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-info {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.item-info h3 {
+    font-size: 1.4rem;
+    color: #2a3b4c;
+    margin-bottom: 15px;
+}
+
+.item-info img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.item-info ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.item-info ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .barra-navegacion ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .contenido-principal {
+        padding: 0 10px;
+    }
+
+    .detalle-impuesto {
+        gap: 20px;
+    }
+}
